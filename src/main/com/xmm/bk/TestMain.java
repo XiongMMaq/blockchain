@@ -1,6 +1,7 @@
 package com.xmm.bk;
 
 import com.alibaba.fastjson.JSON;
+import com.sun.org.apache.xpath.internal.operations.String;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,5 +19,7 @@ public class TestMain {
         blockchain.add(new Block("block3....",blockchain.get(blockchain.size() - 1).getHash()));
 
         System.out.println(JSON.toJSONString(blockchain,true));
+
+        System.out.println(new String());
     }
 }
